@@ -72,10 +72,10 @@ repositories {
     jcenter()
 }
 
-dependencies {
-    //noinspection GradleDynamicVersion
-    implementation 'com.facebook.react:react-native:+'  // From node_modules
-}
+// dependencies {
+//     //noinspection GradleDynamicVersion
+//     implementation 'com.facebook.react:react-native:+'  // From node_modules
+// }
 
 def configureReactNativePom(def pom) {
     def packageJson = new groovy.json.JsonSlurper().parseText(file('../package.json').text)
